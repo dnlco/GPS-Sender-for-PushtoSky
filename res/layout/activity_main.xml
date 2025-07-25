@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"  tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+        
+        <TextView
+        android:id="@+id/ipAddressLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add meg a PC-d IP címét és portját:"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/locationEditText"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginTop="16dp" />
+        <EditText
+            android:id="@+id/locationEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:hint="Desktop IP Address (e.g., http://192.168.1.105:5000)"
+            android:inputType="textPersonName" />
+        
+        <TextView
+            android:id="@+id/locationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nincs helyadat"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/getLocationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Helyzet lekérése" />
+
+        <Button
+            android:id="@+id/sendLocationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Helyzet elküldése"
+            android:enabled="false" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

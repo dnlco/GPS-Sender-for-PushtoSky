@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nincs helyadat"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/getLocationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Helyzet lekérése" />
+
+    <Button
+        android:id="@+id/sendLocationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Helyzet elküldése"
+        android:enabled="false" />
+
+</LinearLayout>
+
